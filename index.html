@@ -8,11 +8,25 @@
       <body>
         <h1 style="text-align:center;">Week 4 tasks</h1> 
         <h2 style="text-align:center;">These are my tasks for this week</h2>   
-        <img src="Nature.jpeg" alt="Photo from my files"width=400 height=250>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png" alt="Photo from the web" width=350 height=250>
+        <div class="row">
+          <div class="column">
+            <img src= "Nature.jpeg" alt="Photo from my files" width=400 height=250>
+          </div>
+          <div class="column">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png" alt="Photo from the web" width=350 height=250>
+          </div>
+        </div>  
+  
         <a href="https://tech-a.github.io/Intro.github.io/">Visit my other website</a>
         <p><b>This has a border and is bold</b></p>
         <p><i>This is italic</i></p>
+
+        
+        <h3> Using javascript</h3>
+        <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+        <p id="demo"></p>
         <h3>My table</h3>
         <table style="width:100%">
           <tr>
@@ -65,7 +79,19 @@
           img {display: block;
   margin-left: auto;
   margin-right: auto;}
-  
+  * {
+  box-sizing: border-box;
+}
+.column {
+  float:left;
+  width: 10;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
       </style>
 
 
