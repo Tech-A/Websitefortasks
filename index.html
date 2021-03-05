@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
       <head>
-          <title>Week 4 tasks</title>
+        <meta charset="utf-8">
+
+          <title>Website for tasks</title> 
+          <link rel= "stylesheet" href= "Style.css">
       </head>
-      
+     
 
       <body>
-        <h1 style="text-align:center;">Week 4 tasks</h1> 
-        <h2 style="text-align:center;">These are my tasks for this week</h2>   
+<header>
+        <h1 style="text-align:center;">Website for tasks</h1> 
+    </header>
+<div>
+  <nav>
+    <ul>
+      <li>Image</li>
+      <li>Link</li>
+      <li>Text</li>
+      <li>Border</li>
+      <li>Table</li>
+      <li>List</li>
+    </ul>
+  </nav>
+</div>
+    
         <div class="row">
           <div class="column">
             <img src= "Nature.jpeg" alt="Photo from my files" width=400 height=250>
@@ -16,18 +33,18 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png" alt="Photo from the web" width=350 height=250>
           </div>
         </div>  
-  
-        <a href="https://tech-a.github.io/Intro.github.io/">Visit my other website</a>
-        <p><b>This has a border and is bold</b></p>
-        <p><i>This is italic</i></p>
-
         
-        <h3> Using javascript</h3>
-        <button type="button"
-        onclick="document.getElementById('demo').innerHTML = Date()">
-        Click me to display Date and Time.</button>
-        <p id="demo"></p>
+
+        <div>
+        <a href="https://tech-a.github.io/Intro.github.io/">Visit my other website</a>
+        <p style= "border:5px solid snow;"><b>This has a border and is bold</b></p>
+        <p><i>This is italic</i></p>
         <h3>My table</h3>
+      </div>
+
+
+
+      <div>
         <table style="width:100%">
           <tr>
             <th>Firstname</th>
@@ -45,58 +62,75 @@
             <td>94</td>
           </tr>
         </table>
+      </div>
       
-        <h3>An Unordered HTML List</h2>
 
+
+      <div> 
+      <h3>An Unordered HTML List</h2>
         <ul>
           <li>Second</li>
           <li>Third</li>
           <li>First</li>
         </ul>  
         
-        <h3>An Ordered HTML List</h2>
-        
+      <h3>An Ordered HTML List</h2>  
         <ol>
           <li>First</li>
           <li>Second</li>
           <li>Third</li>
         </ol> 
+      </div>
       
-      
+
+
       </body>
 
       <style>
-        .left-side {display: flex;
-        }
-          body {background-color:thistle;
-          }
-          h1 {color:darkslategrey;
-          }
-          h2 {color:whitesmoke} 
-          p {border: 5px solid white;
-          text-align: center;}
-          table, th, td {
-  border: 1px solid black;
+        header {
+    background-color:teal;
+    padding: 55px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
 }
-          img {display: block;
-  margin-left: auto;
-  margin-right: auto;}
-  * {
-  box-sizing: border-box;
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; 
+    background:turquoise;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+body {background-color:lightslategrey
+}
+h1 {color:white;
+}
+h2 {color:whitesmoke} 
+table, th, td {
+border: 1px solid black;
+}
+
+img {display: block;
+margin-left: auto;
+margin-right: auto;}
+* {
+box-sizing: border-box;
 }
 .column {
-  float:left;
-  width: 10;
-  padding: 10px;
+float:left;
+width: 10;
+padding: 10px;
 }
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
+content: "";
+clear: both;
+display: table;
 }
+
       </style>
-
-
-
-
 </html>
