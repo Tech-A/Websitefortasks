@@ -12,19 +12,15 @@
 <header>
         <h1 style="text-align:center;">Website for tasks</h1> 
     </header>
-<div>
-  <nav>
-    <ul>
-      <li>Image</li>
-      <li>Link</li>
-      <li>Text</li>
-      <li>Border</li>
-      <li>Table</li>
-      <li>List</li>
-    </ul>
-  </nav>
-</div>
-    
+    <div class="sidenav">
+      <a href="#Image">Image</a>
+      <a href="#Link">Link</a>
+      <a href="#Text">Text</a>
+      <a href="#Border">Border</a>
+      <a href="#Table">Table</a>
+      <a href="#List">List</a>
+    </div>
+
         <div class="row">
           <div class="column">
             <img src= "Nature.jpeg" alt="Photo from my files" width=400 height=250>
@@ -100,24 +96,46 @@
     font-size: 30px;
     color: white;
 }
-nav {
-    float: left;
-    position:fixed;
-    width: 30%;
-    height: 1000px; 
-    background:rgb(149, 170, 192);
-    padding: 20px;
-  }
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color:slategrey;
+  display: block;
+}
+
+.sidenav a:hover {
+  color:teal;
+}
+
+.main {
+  margin-left: 140px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
   .center {
   margin: auto;
   width: 50%;
   border: 3px solid white;
   padding: 10px;
 }
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
+
 body {background-image: url('https://i.pinimg.com/736x/34/82/53/348253bed07e211aad86965006e66d3b.jpg');
 background-repeat: no-repeat;
   background-attachment: fixed;
